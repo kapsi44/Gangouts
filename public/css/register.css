@@ -1,0 +1,118 @@
+/* Credit to bootsnipp.com for the css for the color graph */
+.colorgraph {
+  height: 5px;
+  border-top: 0;
+  background: #c4e17f;
+  border-radius: 5px;
+  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+
+     .btn-group .dropdown-menu a{
+    color: #151313;
+}
+
+.btn-default .dropdown-menu {
+  color: #000 !important;
+}
+.btn-default .dropdown-menu li > a:hover,
+.btn-default .dropdown-menu li > a:focus {
+  background-color: #000 !important;
+  color:#fff !important;
+}
+.btn-group-primary .dropdown-menu {
+  background-color: #3784c5 !important;
+}
+.btn-group-primary .dropdown-menu li > a:hover,
+.btn-group-primary .dropdown-menu li > a:focus {
+  background-color: #428bca !important;
+}
+.btn-group-success .dropdown-menu {
+  background-color: #51b351 !important;
+}
+.btn-group-success .dropdown-menu li > a:hover,
+.btn-group-success .dropdown-menu li > a:focus {
+  background-color: #5cb85c !important;
+}
+.btn-group-info .dropdown-menu {
+  background-color: #4ebbdb !important;
+}
+.btn-group-info .dropdown-menu li > a:hover,
+.btn-group-info .dropdown-menu li > a:focus {
+  background-color: #5bc0de !important;
+}
+.btn-group-warning .dropdown-menu {
+  background-color: #efa640 !important;
+}
+.btn-group-warning .dropdown-menu li > a:hover,
+.btn-group-warning .dropdown-menu li > a:focus {
+  background-color: #f0ad4e !important;
+}
+.btn-group-danger .dropdown-menu {
+  background-color: #d64742 !important;
+}
+.btn-group-danger .dropdown-menu li > a:hover,
+.btn-group-danger .dropdown-menu li > a:focus {
+  background-color: #d9534f !important;
+}
+
+    .checkbox label:after, 
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}

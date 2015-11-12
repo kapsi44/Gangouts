@@ -1,0 +1,55 @@
+<?php 
+//require_once '../Public/index.php';
+require_once '../config/config.php';
+
+class BaseController 
+{
+    protected $module = array();
+    protected $action = array();
+    
+    public function __construct() 
+    {
+        $control = array();		
+        echo "In the App";
+        $url = $_GET;
+        print_r ($url);           
+        foreach($url as $key=>$value) 
+        {
+           if($key == "module") {            
+               $this->module = $value;             
+               $this->Controller($this->module);
+           }
+           if ($key == "action") {
+               $this->action = $value;
+               $this->act($this->module,$this->action);                
+           }       
+        }
+          
+    }
+   	public function Controller($module) 
+   	{
+   		if (file_exists(HOME . DS .'controller' . DS . $module . '.php')) {
+   		require_once HOME . DS .'controller' . DS . $module . '.php';
+   		}
+   	}
+   	public function act($module,$action)
+   	{
+   		if(method_exists($module, $action)) {
+   			$mod = new $module;
+   			$mod->action();
+   		}
+   	}
+    public function hello()
+    {
+    	
+    	echo "heool";
+    }
+    public function render($view)
+    {
+      header("Location:../view/$view.php");
+    }
+
+
+}
+    
+
